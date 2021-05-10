@@ -491,12 +491,10 @@ function CreatePeds()
 		SetEntityCanBeDamaged(dealer, false)
 		SetBlockingOfNonTemporaryEvents(dealer, true)
 		SetPedCanRagdollFromPlayerImpact(dealer, false)
-
 		SetPedResetFlag(dealer, 249, true)
 		SetPedConfigFlag(dealer, 185, true)
 		SetPedConfigFlag(dealer, 108, true)
 		SetPedConfigFlag(dealer, 208, true)
-		
 		SetDealerOutfit(dealer, i+6)
 
 		local scene = CreateSynchronizedScene(v.coords.x, v.coords.y, v.coords.z, 0.0, 0.0, v.coords.w, 2)

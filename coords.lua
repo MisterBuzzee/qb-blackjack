@@ -20,31 +20,63 @@ elevator_entrance_location = {
 	["a"] = 53.0310745
 }
 
-tables = {
-	-- {
-	-- 	coords = vector4(-1897.44, 2074.63, 143.8624, 315.49154663086),
-	-- 	highStakes = false
-	-- },
-	-- {
-	-- 	coords = vector4(-1894.527, 2072.19, 143.8624, 315.49154663086),
-	-- 	highStakes = false
-	-- },
-	-- {
-	-- 	coords = vector4(986.86566162109,64.602401733398,74.49, 205.13),
-	-- 	highStakes = false
-	-- },
-	-- {
-	-- 	coords = vector4(989.45727539063,53.179492950439,74.49, 357.63),
-	-- 	highStakes = false
-	-- },
-	-- {
-	-- 	coords = vector4(983.63928222656,57.522274017334,74.49, 285.13),
-	-- 	highStakes = false
-	-- },
-	-- {
-	-- 	coords = vector4(995.08795166016,60.42565536499,74.49, 105.13),
-	-- 	highStakes = false
-	-- },
+tables = { -- Spawns Ped Only -- Setup Currently For This https://forum.cfx.re/t/cayo-perico-casino-dlc-ipl-loader/2099391
+	{
+		coords = vector4(996.17, 51.69, 68.45, 318.91),
+		highStakes = false
+	},
+	{
+		coords = vector4(1000.66, 50.88, 68.45, 6.73),
+		highStakes = false
+	},
+	{
+		coords = vector4(1004.09, 53.11, 68.45, 55.30),
+		highStakes = false
+	},
+	{
+		coords = vector4(1002.36, 60.52, 68.45, 142.53),
+		highStakes = false
+	},
+	{
+		coords = vector4(998.44, 60.99, 68.45, 191.77),
+		highStakes = false
+	},
+	{
+		coords = vector4(994.89, 58.29, 68.45, 237.13),
+		highStakes = false
+	},
+	{
+		coords = vector4(985.95, 60.56, 69.25, 187.91),
+		highStakes = true
+	},
+	{
+		coords = vector4(982.50, 62.85, 69.25, 101.44),
+		highStakes = true
+	},
+	{
+		coords = vector4(984.97, 66.64, 69.25, 3.39),
+		highStakes = true
+	},
+	{
+		coords = vector4(988.45, 64.38, 69.25, 278.52),
+		highStakes = true
+	},
+	{
+		coords = vector4(989.05, 45.69, 69.25, 22.31),
+		highStakes = true
+	},
+	{
+		coords = vector4(987.30, 42.19, 69.25, 102.30), 
+		highStakes = true
+	},
+	{
+		coords = vector4(991.56, 40.10, 69.25, 200.84),
+		highStakes = true
+	},
+	{
+		coords = vector4(993.20, 43.70, 69.25, 279.25),
+		highStakes = true
+	},
 }
 
 --[[
@@ -55,27 +87,12 @@ tables = {
 	3: Purple
 --]]
 
-customTables = {
-    {
-        coords = vector4(-1897.44, 2074.63, 143.8624, 315.49154663086),
+customTables = { -- Spawns ped with table, example below
+--[[ 	{
+		coords = vector4(996.77, 52.43, 68.43, 318.91),
 		highStakes = false,
-		color = 0,
-	},
-	{
-		coords = vector4(-1894.527, 2072.19, 143.8624, 315.49154663086),
-		highStakes = false,
-		color = 0,
-	},
-	-- {
-    --     coords = vector4(984.58,61.45,74.49,251.10),
-	-- 	highStakes = false,
-	-- 	color = 2,
-    -- },
-    -- {
-    --     coords = vector4(992.1,64.3,74.49,329.33),
-	-- 	highStakes = true,
-	-- 	color = 3,
-    -- },
+		color = 0
+	},--]]
 }
 
 for i,v in pairs(customTables) do
