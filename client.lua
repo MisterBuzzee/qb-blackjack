@@ -220,6 +220,7 @@ function getChips(amount)
 end
 
 function leaveBlackjack()
+	LocalPlayer.state:set("inv_busy", false, true)
 	leavingBlackjack = true
 	renderScaleform = false
 	renderTime = false
@@ -707,12 +708,7 @@ AddEventHandler("BLACKJACK:RequestBets", function(index, _timeLeft)
 			if IsControlJustPressed(1, 205) then -- Q / Y
 				selectedBet = tableLimit
 			elseif IsControlJustPressed(1, 202) then -- ESC / B
-				leavingBlackjack = true
-				renderScaleform = false
-				renderTime = false
-				renderBet = false
-				renderHand = false
-				selectedBet = 1
+				leaveBlackjack()
 				return
 			end
 
@@ -1359,6 +1355,7 @@ function ProcessTables()
 							end
 							
 							if IsControlJustPressed(1, 51) then
+								LocalPlayer.state:set("inv_busy", true, true)
 								if satDownCallback ~= nil then
 									satDownCallback()
 								end
