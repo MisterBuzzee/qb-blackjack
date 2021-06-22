@@ -957,7 +957,7 @@ AddEventHandler("BLACKJACK:RequestMove", function(_timeLeft)
 
 				return
 			end
-			if IsControlJustPressed(1, 192) and #hand == 2 and #splitHand == 0 then
+			if IsControlJustPressed(1, 205) and #hand == 2 and #splitHand == 0 then
 				if leavingBlackjack == true then leaveBlackjack() return end
 
 				TriggerServerEvent("BLACKJACK:CheckPlayerBet", g_seat, bet)
